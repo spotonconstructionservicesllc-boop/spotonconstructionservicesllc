@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spot On Construction Services LLC | Houston Residential Remodeling & Repairs</title>
+  <meta name="description" content="Spot On Construction Services LLC helps Houston homeowners with roofing, painting, drywall, flooring, windows, trim, and punch lists. Fast quotes. Clean work. Clear communication." />
+  <meta name="theme-color" content="#0b1f3a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Spot On Construction Services LLC | Houston Residential Remodeling & Repairs" />
+  <meta property="og:description" content="Roofing, painting, drywall, flooring, windows, trim, and punch lists across Greater Houston." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://spotonconstructionservicesllc.com" />
+  <meta property="og:image" content="https://spotonconstructionservicesllc.com/og-image.jpg" />
+
+  <!-- Basic favicon (optional): replace with your own -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%230b1f3a' d='M32 4 4 28h8v32h16V44h8v16h16V28h8z'/%3E%3C/svg%3E" />
+
+  <style>
+    :root{
+      --bg:#071427;
+      --panel:#0b1f3a;
+      --card:#0e2a4d;
+      --text:#eaf2ff;
+      --muted:#b8c7e2;
+      --brand:#ff7a18;
+      --brand2:#2dd4bf;
+      --line:rgba(255,255,255,.12);
+      --shadow: 0 14px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 20% 0%, rgba(45,212,191,.12), transparent 60%),
+                  radial-gradient(900px 600px at 85% 5%, rgba(255,122,24,.16), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(7,20,39,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      text-decoration:none;
+      min-width: 220px;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, var(--brand), #ffb703);
+      display:grid; place-items:center;
+      box-shadow: 0 10px 20px rgba(255,122,24,.22);
+      flex:0 0 auto;
+    }
+    .logo svg{width:22px; height:22px; fill:#1b1208}
+    .brand strong{display:block; font-size:14px; letter-spacing:.2px}
+    .brand span{display:block; font-size:12px; color:var(--muted)}
+    .links{
+      display:flex; align-items:center; gap:18px;
+    }
+    .links a{
+      text-decoration:none;
+      color:var(--muted);
+      font-size:14px;
+      padding:8px 10px;
+      border-radius:12px;
+    }
+    .links a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .cta{
+      display:flex; align-items:center; gap:10px;
+    }
+    .btn{
+      border:1px solid transparent;
+      background: linear-gradient(135deg, var(--brand), #ffb703);
+      color:#1b1208;
+      text-decoration:none;
+      font-weight:700;
+      font-size:14px;
+      padding:10px 14px;
+      border-radius:14px;
+      box-shadow: 0 12px 26px rgba(255,122,24,.22);
+      display:inline-flex; align-items:center; gap:8px;
+      cursor:pointer;
+    }
+    .btn.secondary{
+      background: transparent;
+      border-color: var(--line);
+      color: var(--text);
+      box-shadow:none;
+    }
+    .btn.secondary:hover{background:rgba(255,255,255,.06)}
+    .hamburger{
+      display:none;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      border-radius:14px;
+      padding:10px 12px;
+      cursor:pointer;
+    }
+
+    /* Hero */
+    .hero{padding:56px 0 26px}
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    .heroCard{
+      background: linear-gradient(180deg, rgba(14,42,77,.88), rgba(11,31,58,.88));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:28px;
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .heroCard:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(500px 200px at 30% 0%, rgba(45,212,191,.18), transparent 60%),
+                  radial-gradient(420px 200px at 80% 20%, rgba(255,122,24,.22), transparent 60%);
+      pointer-events:none;
+    }
+    .heroCard > *{position:relative}
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(28px, 3.2vw, 44px);
+      line-height:1.08;
+      letter-spacing:-.6px;
+    }
+    .sub{
+      margin:0 0 18px;
+      color: var(--muted);
+      font-size:16px;
+      max-width: 56ch;
+    }
+    .pillRow{display:flex; flex-wrap:wrap; gap:10px; margin: 10px 0 18px}
+    .pill{
+      font-size:12px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color: var(--muted);
+      background: rgba(255,255,255,.04);
+    }
+    .heroActions{display:flex; gap:10px; flex-wrap:wrap}
+    .note{margin-top:14px; font-size:12px; color: var(--muted)}
+
+    .sideCard{
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:18px;
+      box-shadow: var(--shadow);
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .kpis{display:grid; grid-template-columns: 1fr 1fr; gap:10px}
+    .kpi{
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      border-radius: 16px;
+      padding:12px;
+    }
+    .kpi strong{display:block; font-size:18px}
+    .kpi span{display:block; font-size:12px; color:var(--muted)}
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px;
+      border-radius: 16px;
+      border:1px solid rgba(45,212,191,.35);
+      background: rgba(45,212,191,.10);
+      color: var(--text);
+      font-size:13px;
+      font-weight:600;
+    }
+    .badge svg{width:16px; height:16px; fill:var(--brand2)}
+
+    section{padding:34px 0}
+    .sectionHead{display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin-bottom:14px}
+    .sectionHead h2{margin:0; font-size: clamp(20px, 2.2vw, 28px); letter-spacing:-.3px}
+    .sectionHead p{margin:0; color:var(--muted); max-width:70ch}
+
+    .grid3{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
+    .card{
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.22);
+    }
+    .card h3{margin:10px 0 6px; font-size:16px}
+    .card p{margin:0; color:var(--muted); font-size:14px}
+    .icon{
+      width:40px; height:40px; border-radius:14px;
+      background: rgba(255,122,24,.14);
+      border:1px solid rgba(255,122,24,.28);
+      display:grid; place-items:center;
+    }
+    .icon svg{width:20px; height:20px; fill:var(--brand)}
+
+    .list{display:grid; gap:10px}
+    .listItem{
+      display:flex; gap:10px;
+      padding:12px;
+      border-radius: 16px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .check{
+      width:22px; height:22px; border-radius:999px;
+      background: rgba(45,212,191,.14);
+      border:1px solid rgba(45,212,191,.35);
+      display:grid; place-items:center;
+      flex:0 0 auto;
+    }
+    .check svg{width:14px; height:14px; fill:var(--brand2)}
+    .listItem strong{display:block; font-size:14px}
+    .listItem span{display:block; font-size:13px; color:var(--muted)}
+
+    .gallery{display:grid; grid-template-columns: repeat(4, 1fr); gap:10px}
+    .ph{
+      aspect-ratio: 4/3;
+      border-radius: 16px;
+      border:1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02)),
+        radial-gradient(180px 80px at 20% 20%, rgba(255,122,24,.20), transparent 60%),
+        radial-gradient(160px 90px at 80% 40%, rgba(45,212,191,.16), transparent 60%);
+      position:relative;
+      overflow:hidden;
+    }
+    .ph span{
+      position:absolute; left:12px; bottom:10px;
+      font-size:12px; color:rgba(234,242,255,.86);
+      padding:6px 8px; border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(7,20,39,.55);
+      backdrop-filter: blur(8px);
+    }
+
+    .quotes{display:grid; grid-template-columns: repeat(3,1fr); gap:14px}
+    blockquote{
+      margin:0;
+      padding:16px;
+      border-radius: var(--radius);
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+    }
+    blockquote p{margin:0 0 10px; color:var(--text); font-size:14px}
+    blockquote footer{color:var(--muted); font-size:12px}
+
+    .contactGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+      align-items:start;
+    }
+    form{display:grid; gap:10px}
+    label{font-size:13px; color:var(--muted)}
+    input, textarea, select{
+      width:100%;
+      padding:12px 12px;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(7,20,39,.55);
+      color: var(--text);
+      outline:none;
+    }
+    textarea{min-height:120px; resize:vertical}
+    input:focus, textarea:focus, select:focus{
+      border-color: rgba(45,212,191,.55);
+      box-shadow: 0 0 0 4px rgba(45,212,191,.10);
+    }
+    .small{font-size:12px; color:var(--muted)}
+    .footer{
+      padding:22px 0 34px;
+      border-top:1px solid var(--line);
+      color: var(--muted);
+      font-size:13px;
+    }
+    .footerRow{
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      align-items:center;
+    }
+
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns:1fr}
+      .gallery{grid-template-columns: repeat(2,1fr)}
+      .grid3{grid-template-columns:1fr}
+      .quotes{grid-template-columns:1fr}
+      .contactGrid{grid-template-columns:1fr}
+      .links{display:none}
+      .hamburger{display:inline-flex}
+      .mobileMenu{
+        display:none;
+        border-top:1px solid var(--line);
+        padding:10px 0 14px;
+      }
+      .mobileMenu.open{display:block}
+      .mobileMenu a{
+        display:block;
+        padding:10px 10px;
+        border-radius:12px;
+        text-decoration:none;
+        color:var(--muted);
+      }
+      .mobileMenu a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    }
+  </style>
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Spot On Construction Services LLC",
+    "areaServed": "Greater Houston, TX",
+    "telephone": "+1-713-258-0060",
+    "url": "https://spotonconstructionservicesllc.com",
+    "description": "Residential remodeling and repairs: roofing, painting, drywall, flooring, windows, trim, and punch lists.",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="Spot On Construction Services LLC Home">
+          <div class="logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2 2 10h3v12h6v-7h2v7h6V10h3L12 2z"/></svg>
+          </div>
+          <div>
+            <strong>Spot On Construction Services LLC</strong>
+            <span>Houston, TX • Residential Remodeling & Repairs</span>
+          </div>
+        </a>
+
+        <nav class="links" aria-label="Primary navigation">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#work">Work</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="cta">
+          <a class="btn secondary" href="tel:+17132580060" id="phoneBtn" aria-label="Call now">
+            <span aria-hidden="true">📞</span> Call
+          </a>
+          <a class="btn" href="#contact">
+            <span aria-hidden="true">⚡</span> Get a Quote
+          </a>
+          <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="mobileMenu">
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <div class="mobileMenu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap">
+      <section class="hero" aria-label="Hero">
+        <div class="heroGrid">
+          <div class="heroCard">
+            <h1>Reliable home improvements with clean work and clear communication.</h1>
+            <p class="sub">
+              We help Houston homeowners and investors with roofing, painting, drywall, flooring, windows, trim, and punch lists.
+              Fast quotes, on-time crews, and photo updates.
+            </p>
+
+            <div class="pillRow" aria-label="Highlights">
+              <div class="pill">Written estimates</div>
+              <div class="pill">Written scope + photos</div>
+              <div class="pill">Clean job sites</div>
+              <div class="pill">Warranty-backed work (edit)</div>
+            </div>
+
+            <div class="heroActions">
+              <a class="btn" href="#contact">Request a Free Estimate</a>
+              <a class="btn secondary" href="#services">See Services</a>
+            </div>
+
+            <div class="note">
+              Serving: Houston • Katy • Cypress • Spring • Pearland • Sugar Land • Pasadena (edit your areas)
+            </div>
+          </div>
+
+          <aside class="sideCard" aria-label="Quick info">
+            <div class="badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm1 14.5h-2V11h2Zm0-7h-2V7h2Z"/></svg>
+              Same-week scheduling available (as capacity allows)
+            </div>
+
+            <div class="kpis" aria-label="Key metrics">
+              <div class="kpi">
+                <strong>24–48 hrs</strong>
+                <span>Typical quote turnaround</span>
+              </div>
+              <div class="kpi">
+                <strong>Photo updates</strong>
+                <span>Before / during / after</span>
+              </div>
+              <div class="kpi">
+                <strong>Clear scopes</strong>
+                <span>No surprise add-ons</span>
+              </div>
+              <div class="kpi">
+                <strong>Local crew</strong>
+                <span>Houston-based</span>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top:4px">
+              <h3 style="margin:0 0 8px">Need a quick ballpark?</h3>
+              <p style="margin:0 0 12px">Send photos + address and we’ll reply with next steps.</p>
+              <a class="btn secondary" href="#contact">Message us</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="services" aria-label="Services">
+        <div class="sectionHead">
+          <div>
+            <h2>Services</h2>
+            <p>Pick one project or bundle multiple items—perfect for make-readies, punch lists, and investor turns.</p>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 2 12h3v9h6v-6h2v6h6v-9h3z"/></svg>
+            </div>
+            <h3>Roofing & Repairs</h3>
+            <p>Leak diagnostics, roof repairs, storm restoration support, vent/boot replacements, minor decking work.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 2h10v2H7V2Zm0 4h10v14H7V6Zm2 2v10h6V8H9Z"/></svg>
+            </div>
+            <h3>Painting</h3>
+            <p>Interior/exterior paint, prep and patching, cabinets (light), trim and touch-ups, clean lines.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16v4H4V4Zm0 6h10v10H4V10Zm12 0h4v10h-4V10Z"/></svg>
+            </div>
+            <h3>Drywall & Texture</h3>
+            <p>Repairs, tape/float, matching texture, water-damage patching, popcorn removal (where applicable).</p>
+          </div>
+
+          <div class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 5h18v2H3V5Zm2 4h14v10H5V9Zm2 2v6h10v-6H7Z"/></svg>
+            </div>
+            <h3>Flooring</h3>
+            <p>LVP/laminate installs, transitions, baseboards, small tile repairs (edit if you want full tile).</p>
+          </div>
+
+          <div class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4V4Zm2 2v12h12V6H6Zm2 2h8v8H8V8Z"/></svg>
+            </div>
+            <h3>Windows & Doors</h3>
+            <p>Replacements and repairs, hardware issues, caulking/weatherproofing, alignment and sealing.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 3h10v6H7V3Zm-2 8h14v10H5V11Zm2 2v6h10v-6H7Z"/></svg>
+            </div>
+            <h3>Trim & Punch Lists</h3>
+            <p>Baseboards, door casing, small carpentry, make-ready lists, investor turns, final detail work.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" aria-label="Process">
+        <div class="sectionHead">
+          <div>
+            <h2>How it works</h2>
+            <p>Simple process, no runaround. You’ll always know what’s happening and what it costs.</p>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="listItem">
+            <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.2 16.6 4.9 12.3 3.5 13.7l5.7 5.7L20.5 8.1 19.1 6.7z"/></svg></div>
+            <div>
+              <strong>1) Quick call + photos</strong>
+              <span>Tell us the goal. Share photos/video and the address. We confirm scope and timing.</span>
+            </div>
+          </div>
+
+          <div class="listItem">
+            <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.2 16.6 4.9 12.3 3.5 13.7l5.7 5.7L20.5 8.1 19.1 6.7z"/></svg></div>
+            <div>
+              <strong>2) Written estimate</strong>
+              <span>Line-item pricing with what’s included, what’s excluded, and material allowances (if needed).</span>
+            </div>
+          </div>
+
+          <div class="listItem">
+            <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.2 16.6 4.9 12.3 3.5 13.7l5.7 5.7L20.5 8.1 19.1 6.7z"/></svg></div>
+            <div>
+              <strong>3) Schedule + execute</strong>
+              <span>We show up on time, protect the space, and keep the job site clean.</span>
+            </div>
+          </div>
+
+          <div class="listItem">
+            <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.2 16.6 4.9 12.3 3.5 13.7l5.7 5.7L20.5 8.1 19.1 6.7z"/></svg></div>
+            <div>
+              <strong>4) Final walkthrough</strong>
+              <span>We do a punch list with you, share final photos, and confirm warranty items (edit your policy).</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" aria-label="Work gallery">
+        <div class="sectionHead">
+          <div>
+            <h2>Recent work</h2>
+            <p>Swap these placeholders with your own job photos. (Easiest: replace each tile with an &lt;img&gt; tag.)</p>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="ph"><span>Roof repair</span></div>
+          <div class="ph"><span>Interior paint</span></div>
+          <div class="ph"><span>Drywall patch</span></div>
+          <div class="ph"><span>LVP flooring</span></div>
+          <div class="ph"><span>Window install</span></div>
+          <div class="ph"><span>Trim package</span></div>
+          <div class="ph"><span>Make-ready</span></div>
+          <div class="ph"><span>Before/After</span></div>
+        </div>
+      </section>
+
+      <section id="reviews" aria-label="Reviews">
+        <div class="sectionHead">
+          <div>
+            <h2>What clients say</h2>
+            <p>Replace these with real reviews (Google, Nextdoor, referrals). Keep them short and specific.</p>
+          </div>
+        </div>
+
+        <div class="quotes">
+          <blockquote>
+            <p>“Fast quote, showed up on time, and the paint lines were clean. Great communication.”</p>
+            <footer>— Homeowner, Houston</footer>
+          </blockquote>
+          <blockquote>
+            <p>“We had a punch list that kept dragging out. They handled it in two visits and sent photos.”</p>
+            <footer>— Investor client</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Roof leak fixed the right way. They explained the issue, didn’t upsell, and followed through.”</p>
+            <footer>— Homeowner, Katy</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="contact" aria-label="Contact">
+        <div class="sectionHead">
+          <div>
+            <h2>Get a quote</h2>
+            <p>Tell us what you need. If you can, include photos/video and your address for the fastest turnaround.</p>
+          </div>
+        </div>
+
+        <div class="contactGrid">
+          <div class="card">
+            <h3 style="margin:0 0 10px">Contact details</h3>
+            <p style="margin:0 0 14px; color:var(--muted)">
+              <strong style="color:var(--text)">Phone:</strong> <a href="tel:+17132580060">(713) 258-0060</a><br/>
+              <strong style="color:var(--text)">Email:</strong> <a href="mailto:SpotOnConstructionServicesLLC@gmail.com">SpotOnConstructionServicesLLC@gmail.com</a><br/>
+              <strong style="color:var(--text)">Website:</strong> <a href="https://spotonconstructionservicesllc.com">spotonconstructionservicesllc.com</a><br/>
+              <strong style="color:var(--text)">Service Area:</strong> Greater Houston, TX
+            </p>
+
+            <div class="list">
+              <div class="listItem">
+                <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.2 16.6 4.9 12.3 3.5 13.7l5.7 5.7L20.5 8.1 19.1 6.7z"/></svg></div>
+                <div>
+                  <strong>Best way to get a fast quote</strong>
+                  <span>Text/call + photos + address + timeline.</span>
+                </div>
+              </div>
+              <div class="listItem">
+                <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.2 16.6 4.9 12.3 3.5 13.7l5.7 5.7L20.5 8.1 19.1 6.7z"/></svg></div>
+                <div>
+                  <strong>Hours</strong>
+                  <span>Mon–Sat 8am–6pm (edit)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 style="margin:0 0 10px">Message us</h3>
+
+            <!-- OPTION A (no backend): mailto submit via JS -->
+            <form id="quoteForm">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" autocomplete="name" required />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" autocomplete="tel" required />
+              </div>
+              <div>
+                <label for="service">Service needed</label>
+                <select id="service" name="service" required>
+                  <option value="">Select one…</option>
+                  <option>Roof repair</option>
+                  <option>Painting</option>
+                  <option>Drywall</option>
+                  <option>Flooring</option>
+                  <option>Windows / Doors</option>
+                  <option>Trim / Punch list</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="details">Project details (include address + timeline)</label>
+                <textarea id="details" name="details" required></textarea>
+              </div>
+
+              <button class="btn" type="submit">Send</button>
+              <div class="small">
+                This form opens your email app (no website server needed). Want a real form that collects leads on the site?
+                Use Formspree or your CRM and replace this block.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer" role="contentinfo">
+        <div class="footerRow">
+          <div>© <span id="year"></span> Spot On Construction Services LLC. All rights reserved.</div>
+          <div>
+            <a href="#top" style="text-decoration:none">Back to top ↑</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger?.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', String(open));
+    });
+
+    // Close mobile menu after clicking a link
+    mobileMenu?.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // "Mailto" form submit (no backend)
+    const form = document.getElementById('quoteForm');
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value.trim();
+      const details = document.getElementById('details').value.trim();
+
+      if (!name || !phone || !service || !details) return;
+
+      const to = "SpotOnConstructionServicesLLC@gmail.com";
+      const subject = encodeURIComponent(`Quote Request: ${service} (${name})`);
+      const body = encodeURIComponent(
+        `Name: ${name}\nPhone: ${phone}\nService: ${service}\n\nDetails:\n${details}\n\nWebsite: https://spotonconstructionservicesllc.com\n`
+      );
+
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+    });
+
+    // Ensure phone button matches your number
+    document.getElementById('phoneBtn')?.setAttribute('href', 'tel:+17132580060');
+  </script>
+</body>
+</html>
